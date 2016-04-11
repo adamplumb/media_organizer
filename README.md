@@ -8,18 +8,22 @@ piling up.  It converts something like this:
 		SwimMeet/ (10 photos, 2 videos)
 		2015-03-23/ (1 photo, 1 video)
 		DFSEFDFD/ (5 videos)
+			Subfolder1/ (1 photo)
+			Subfolder2/ (1 photo, 2 videos)
 
 into this:
 
 	Photos/
 		2015/
 			03/ (11 photos)
+			04/ (2 photos)
 	Videos/
 		2015/
 			03/ (3 videos)
+			04/ (2 videos)
 			05/ (5 videos)
 
-It does this by infering the date the photo or video was taken by looking at the file name, last modified date, or the EXIF data.  It supports most photo categories including some RAW formats that I have used.
+It does this by walking the source folder, infering the date the photo or video was taken by looking at the file name, last modified date, or the EXIF data.  It supports most photo categories including some RAW formats that I have used.
 
 ### Usage
 
